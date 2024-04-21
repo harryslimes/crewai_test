@@ -1,0 +1,10 @@
+
+classify_email:
+  description: Classify the input email. <INPUT_EMAIL_START> '{email}' <INPUT_EMAIL_END>.
+  expected_output: > 
+    One of these 4 options: 'highly important', 'important', 'casual' or 'spam'
+generate_email_response:
+  description: > 
+    Generate a response to the email based on the classification provided by the 'classifier' agent. If the email was 'spam' respond with <NO_RESPONSE>.  <INPUT_EMAIL_START> '{email}' <INPUT_EMAIL_END>
+  expected_output: >
+    A very concise response to the email based on the classification provided by the 'classifier' agent or <NO_RESPONSE>
